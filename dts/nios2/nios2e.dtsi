@@ -1,0 +1,43 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+
+#include "skeleton.dtsi"
+
+/ {
+	cpus {
+		#address-cells = <1>;
+		#size-cells = <0>;
+
+		cpu@0 {
+			device_type = "cpu";
+			compatible = "arrow,nios2e";
+			reg = <0>;
+		};
+
+	};
+
+	flash0: flash@0 {
+		compatible = "soc-nv-flash";
+		reg = <0x00 0x4e000>;
+	};
+
+	sram0: memory@108000 {
+		device_type = "memory";
+		compatible = "mmio-sram";
+		reg = <0x108000 0x8000>;
+	};
+
+	soc {
+		#address-cells = <1>;
+		#size-cells = <1>;
+		compatible = "simple-bus";
+		ranges;
+
+		jtag_uart: uart@111070 {
+			compatible = "altera,jtag-uart";
+			reg = <0x111070 0x400>;
+			label = "jtag_uart0";
+
+			status = "enable";
+		};
+	};
+};

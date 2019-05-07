@@ -1,0 +1,6 @@
+identifier: arrow_max1000
+name: Arrow MAX1000
+type: mcu
+arch: nios2
+toolchain:
+  - zephyr

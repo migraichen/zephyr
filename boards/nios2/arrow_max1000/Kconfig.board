@@ -1,0 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+
+config BOARD_ARROW_MAX1000
+	bool "Arrow MAX1000 Board"
+	depends on SOC_NIOS2E_ZEPHYR

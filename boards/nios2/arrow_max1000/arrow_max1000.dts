@@ -1,0 +1,26 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+
+/dts-v1/;
+
+#include <nios2e.dtsi>
+
+/ {
+	model = "arrow_max1000";
+	compatible = "arrow,nios2e";
+
+	aliases {
+		uart-0 = &jtag_uart;
+	};
+
+	chosen {
+		zephyr,sram = &sram0;
+		zephyr,flash = &flash0;
+		zephyr,console = &jtag_uart;
+		zephyr,shell-uart = &jtag_uart;
+	};
+};
+
+&jtag_uart {
+	status = "ok";
+	current-speed = <115200>;
+};
