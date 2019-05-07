@@ -41,21 +41,4 @@ config ALTERA_AVALON_MSGDMA
 
 endif # DMA_NIOS2_MSGDMA
 
-if UART_NS16550
-
-config UART_NS16550_PCI
-	default n
-
-config UART_NS16550_PORT_0
-	default y
-
-if UART_NS16550_PORT_0
-
-config UART_NS16550_PORT_0_OPTIONS
-	default 0
-
-endif # UART_NS16550_PORT_0
-
-endif # UART_NS16550
-
 endif # SOC_NIOS2E_ZEPHYR
