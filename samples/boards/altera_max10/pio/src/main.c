@@ -42,6 +42,7 @@ void main(void)
 	}
 
 	/* Setup GPIO output */
+/*
 	for (i = 0; i < LED_PINS_WIRED; i++) {
 		ret = gpio_pin_configure(gpio_dev, i, GPIO_DIR_OUT);
 		if (ret) {
@@ -49,7 +50,7 @@ void main(void)
 			return;
 		}
 	}
-
+*/
 	/*
 	 * Note: the LED's are connected in inverse logic
 	 * to the Nios-II PIO core.

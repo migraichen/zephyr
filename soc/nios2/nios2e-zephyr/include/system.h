@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'nios2e'
  * SOPC Builder design path: ../../nios2e.sopcinfo
  *
- * Generated: Tue May 07 13:10:38 CEST 2019
+ * Generated: Wed May 08 09:39:05 CEST 2019
  */
 
 /*
@@ -209,6 +209,60 @@
 
 
 /*
+ * key configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_key altera_avalon_pio
+#define KEY_BASE 0x111040
+#define KEY_BIT_CLEARING_EDGE_REGISTER 0
+#define KEY_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define KEY_CAPTURE 0
+#define KEY_DATA_WIDTH 1
+#define KEY_DO_TEST_BENCH_WIRING 0
+#define KEY_DRIVEN_SIM_VALUE 0
+#define KEY_EDGE_TYPE "NONE"
+#define KEY_FREQ 50000000
+#define KEY_HAS_IN 1
+#define KEY_HAS_OUT 0
+#define KEY_HAS_TRI 0
+#define KEY_IRQ -1
+#define KEY_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define KEY_IRQ_TYPE "NONE"
+#define KEY_NAME "/dev/key"
+#define KEY_RESET_VALUE 0
+#define KEY_SPAN 16
+#define KEY_TYPE "altera_avalon_pio"
+
+
+/*
+ * led configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_led altera_avalon_pio
+#define LED_BASE 0x111050
+#define LED_BIT_CLEARING_EDGE_REGISTER 0
+#define LED_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define LED_CAPTURE 0
+#define LED_DATA_WIDTH 8
+#define LED_DO_TEST_BENCH_WIRING 0
+#define LED_DRIVEN_SIM_VALUE 0
+#define LED_EDGE_TYPE "NONE"
+#define LED_FREQ 50000000
+#define LED_HAS_IN 0
+#define LED_HAS_OUT 1
+#define LED_HAS_TRI 0
+#define LED_IRQ -1
+#define LED_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define LED_IRQ_TYPE "NONE"
+#define LED_NAME "/dev/led"
+#define LED_RESET_VALUE 0
+#define LED_SPAN 16
+#define LED_TYPE "altera_avalon_pio"
+
+
+/*
  * onchip_flash_0_csr configuration
  *
  */
@@ -300,60 +354,6 @@
 
 
 /*
- * pio_0 configuration
- *
- */
-
-#define ALT_MODULE_CLASS_pio_0 altera_avalon_pio
-#define PIO_0_BASE 0x111050
-#define PIO_0_BIT_CLEARING_EDGE_REGISTER 0
-#define PIO_0_BIT_MODIFYING_OUTPUT_REGISTER 0
-#define PIO_0_CAPTURE 0
-#define PIO_0_DATA_WIDTH 8
-#define PIO_0_DO_TEST_BENCH_WIRING 0
-#define PIO_0_DRIVEN_SIM_VALUE 0
-#define PIO_0_EDGE_TYPE "NONE"
-#define PIO_0_FREQ 50000000
-#define PIO_0_HAS_IN 0
-#define PIO_0_HAS_OUT 1
-#define PIO_0_HAS_TRI 0
-#define PIO_0_IRQ -1
-#define PIO_0_IRQ_INTERRUPT_CONTROLLER_ID -1
-#define PIO_0_IRQ_TYPE "NONE"
-#define PIO_0_NAME "/dev/pio_0"
-#define PIO_0_RESET_VALUE 0
-#define PIO_0_SPAN 16
-#define PIO_0_TYPE "altera_avalon_pio"
-
-
-/*
- * pio_1 configuration
- *
- */
-
-#define ALT_MODULE_CLASS_pio_1 altera_avalon_pio
-#define PIO_1_BASE 0x111040
-#define PIO_1_BIT_CLEARING_EDGE_REGISTER 0
-#define PIO_1_BIT_MODIFYING_OUTPUT_REGISTER 0
-#define PIO_1_CAPTURE 0
-#define PIO_1_DATA_WIDTH 1
-#define PIO_1_DO_TEST_BENCH_WIRING 0
-#define PIO_1_DRIVEN_SIM_VALUE 0
-#define PIO_1_EDGE_TYPE "NONE"
-#define PIO_1_FREQ 50000000
-#define PIO_1_HAS_IN 1
-#define PIO_1_HAS_OUT 0
-#define PIO_1_HAS_TRI 0
-#define PIO_1_IRQ -1
-#define PIO_1_IRQ_INTERRUPT_CONTROLLER_ID -1
-#define PIO_1_IRQ_TYPE "NONE"
-#define PIO_1_NAME "/dev/pio_1"
-#define PIO_1_RESET_VALUE 0
-#define PIO_1_SPAN 16
-#define PIO_1_TYPE "altera_avalon_pio"
-
-
-/*
  * sysid_qsys_0 configuration
  *
  */
@@ -365,7 +365,7 @@
 #define SYSID_QSYS_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_QSYS_0_NAME "/dev/sysid_qsys_0"
 #define SYSID_QSYS_0_SPAN 8
-#define SYSID_QSYS_0_TIMESTAMP 1557227226
+#define SYSID_QSYS_0_TIMESTAMP 1557299365
 #define SYSID_QSYS_0_TYPE "altera_avalon_sysid_qsys"
 
 

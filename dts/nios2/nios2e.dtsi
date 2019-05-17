@@ -1,6 +1,7 @@
 /* SPDX-License-Identifier: Apache-2.0 */
 
 #include "skeleton.dtsi"
+#include <dt-bindings/gpio/gpio.h>
 
 / {
 	cpus {
@@ -38,6 +39,16 @@
 			label = "jtag_uart0";
 
 			status = "enable";
+		};
+
+		gpio: gpio@111050 {
+			compatible = "nios2,gpio";
+			reg = <0x111050 0x10>;
+			nios2,gpio-bank-width = <4>;
+			resetvalue = <15>;
+			#gpio-cells = <2>;
+			gpio-controller;
+            label = "PIO_OUTPUT";
 		};
 	};
 };
